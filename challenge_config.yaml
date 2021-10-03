@@ -75,7 +75,7 @@ challenge_phases:
     # 정답 파일(json, csv 등등)의 위치 #
     # annotations폴더에 test.json이 정답이라면, annotations/test.json이라고 입력 #
     # 여기서 입력한 정답 파일은 evalutaion_script/main.py에서 test_annotation_file 파라미터로 들어갑니다. #
-    test_annotation_file: annotations/test_annotations_devsplit.json
+    test_annotation_file: annotations/test.json
     # --- #
     
     # --- #
@@ -105,7 +105,7 @@ challenge_phases:
     # --- #
     # 정답 파일로 받을 양식 #
     # 직접 작성한 evaluation 코드에 맞추어 파일 형식을 수정하면 됩니다. #
-    allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
+    allowed_submission_file_types: ".json"
     # --- #
 
     # --- #
