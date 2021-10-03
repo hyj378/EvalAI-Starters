@@ -14,7 +14,6 @@ evaluation_details: templates/evaluation_details.html
 terms_and_conditions: templates/terms_and_conditions.html
 image: logo.jpg
 submission_guidelines: templates/submission_guidelines.html
-leaderboard_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas a libero nec sagittis.
 # --- #
 
 evaluation_script: evaluation_script.zip # 평가 스크립트
@@ -40,15 +39,14 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
-        "default_order_by": "Total",
+        "labels": ["Accuracy"],
+        "default_order_by": "Accuracy",
         # --- #
         # 리더보드에 설명을 붙이고싶으면 아래와 같이 가능합니다. #
         # 오름차순 내림차순 설정과, 간단한 설명을 리더보드 페이지에 추가할 수 있습니다. #
         "metadata": {
-          "Metric1": {
+          "Accuracy": {
             "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           }
         }
         # --- #
@@ -61,9 +59,9 @@ leaderboard:
 # 이 설정은 evaluation에도 영향을 미치니 주석을 잘 보고 설정해주세요. #
 challenge_phases:
   - id: 1
-    name: Dev Phase # 챌린지 이름
+    name: Image Classification with Self-Learning # 챌린지 이름
     description: templates/challenge_phase_1_description.html #챌린지 설명이 들어가는 위치
-    leaderboard_public: False # 리더보드 공개 유무
+    leaderboard_public: True # 리더보드 공개 유무
 
     # --- #
     # 시작-끝 날짜만 필요할 경우 수정 #
